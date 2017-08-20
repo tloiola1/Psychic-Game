@@ -1,6 +1,7 @@
 document.getElementById("start").addEventListener("click", function(){
 	document.getElementById("start").style.display= "none";
-	var choices = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+
+
 var wins = 0;
 var losses = 0;
 var ties = 0;
@@ -9,25 +10,52 @@ document.onkeyup = function(event){
 
 var userGuess = event.key;
 
-if(choices.indexOf(userGuess.toLowerCase()) > -1){
+var pcGuess = String.fromCharCode(Math.floor(Math.random() * 25 + 97));
 
-var pcGuess = choices[Math.floor(Math.random() * choices.length)];
-console.log(pcGuess);
-document.getElementById("youChose").innerHTML = userGuess;
-document.getElementById("pcChose").innerHTML = pcGuess;
 
-if(userGuess.toLowerCase() == pcGuess.toLowerCase()){
+if (userGuess.toLowerCase() < String.fromCharCode(97) || userGuess.toLowerCase() > String.fromCharCode(122) ||
+	userGuess < String.fromCharCode(97) || userGuess > String.fromCharCode(122)){
+
+	document.getElementById("wrong").style.display= "initial";
+}
+
+else if (userGuess >= String.fromCharCode(97) || userGuess <= String.fromCharCode(122)){
+
+	document.getElementById("wrong").style.display= "none";
+
+	document.getElementById("youChose").innerHTML = userGuess;
+	
+	document.getElementById("pcChose").innerHTML = pcGuess;
+	
+	if(userGuess.toLowerCase() === pcGuess){
+	
 	wins++;
 	document.getElementById("wins").innerHTML = wins;
-}
+	
+	}
 
-else {
+	else {
+	
 	losses++;
 	document.getElementById("losses").innerHTML = losses;
-}
-
+	
+	}
 }
 
 };
-});
+
+//this top
+
+
+
+
+
+
+
+
+
+//this bottom
+
+
+});//Keep this closing tag
 
