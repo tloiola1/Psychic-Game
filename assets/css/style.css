@@ -1,0 +1,81 @@
+body{
+		font-family: 'Bitter', Arial, 'Georgia', Times, Times New Roman, serif !important;
+		overflow-x: hidden;
+		background-image:  url("assets/images/stars.jpg");
+}
+.wrapper{
+    min-height: 100%;
+    margin: 0 auto -50px;
+}
+
+
+#relative{
+	position: relative;
+}
+
+#absolute-menu{
+	padding: 20px 20px 0 20px;
+	position: absolute;
+	top: 5px;
+	left: 277px;
+}
+
+#start{
+	padding: 10px 20px 10px 20px;
+	position: absolute;
+	top: 300px;
+	left: 548px;
+}
+
+#absolute-youChose{
+	padding: 10px 20px 10px 20px;
+	position: absolute;
+	top: 300px;
+	left: 150px;
+}
+
+#absolute-pcChose{
+	padding: 10px 20px 10px 20px;
+	position: absolute;
+	top: 300px;
+	left: 798px;
+}
+
+#absolute-wins{
+	padding: 10px 20px 10px 20px;
+	position: absolute;
+	top: 500px;
+	left: 150px;
+}
+
+#absolute-losses{
+	padding: 10px 20px 10px 20px;
+	position: absolute;
+	top: 500px;
+	right: 150px;
+}
+
+#youChose{
+	font-size: 40px;
+}
+
+#pcChose{
+	font-size: 40px;
+}
+
+#losses{
+	font-size: 40px;
+	color: red;
+}
+#wins{
+	font-size: 40px;
+	color:green;
+}
+
+.footer, 
+.push{
+
+	color: 	rgb(169,169,169) !important;
+	padding-top: 30px !important;
+	margin-top: 30px;
+}

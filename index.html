@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Psychic-Game</title>
+
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Arial|Bitter:700" rel="stylesheet" type="text/css">
+
+</head>
+<body style="background-image: url(assets/images/skull.png)">
+
+<div class="wrapper">
+
+	<header class="container navbar navbar-inverse text-center">  
+		
+		<div class="jumbotron navbar navbar-inverse">
+			
+			<h1>
+				Psychic Game
+			</h1>
+			<h3 >
+				 Game of the Gods
+			</h3>
+		</div>
+
+	</header>
+
+
+	<section id="game" class="container">
+		
+		<div  id="relative" class="row panel panel-default">
+
+			<img class="navbar-inverse img-thumbnail col-md-12" src="assets/images/eyes.jpg" alt="eyes">
+		
+			<div id="absolute-menu" class="panel panel-default">
+				<h6 class="text-center">
+					Hi my name is VIKY. Look into my eyes.
+				</h6>
+				<h2 >
+					Which letter I am thinking right now?
+				</h2>
+			
+			</div>
+
+			<button id="start" class="btn btn-danger" onclick="scrollToGame()"> Start </button>
+
+			<div id="absolute-youChose" class="panel panel-default">
+				<h2 >
+					You Chose: <em id="youChose"> &nbsp </em>
+				</h2>
+			
+			</div>
+
+			<div id="absolute-pcChose" class="panel panel-default">
+
+				<h2 >
+					PC Chose: <em id="pcChose"> &nbsp </em>
+				</h2>
+			
+			</div>
+
+			<div id="absolute-wins" class="panel panel-default">
+
+				<h2 >
+					Wins: <em id="wins"> &nbsp </em>
+				</h2>
+			
+			</div>
+
+			<div id="absolute-losses" class="panel panel-default">
+
+				<h2 >
+					Losses: <em id="losses"> &nbsp </em>
+				</h2>
+			
+			</div>
+
+
+		
+		</div>
+
+	</section>
+
+	<div class="push"></div>
+
+</div> <!-- wrapper closing tag -->
+
+<footer class="row footer">
+
+	<div class="navbar navbar-inverse text-center">
+			
+		© Copyright2017 Tarciso Loiola
+
+	</div>
+
+</footer>
+
+</body>
+
+
+<script src="assets/javascript/game.js"></script>
+
+
+
+
+
+</html>
