@@ -36,6 +36,11 @@ body{
 	padding: 10px 20px 10px 20px;
 }
 
+#goAhead{
+	display: none;
+	padding: 10px 20px 10px 20px;
+}
+
 #youChose{
 	padding: 10px 20px 10px 20px;
 }
